@@ -1,6 +1,6 @@
 var async = require('async')
-var bcrypt = require('bcrypt')
-var levelup = require('levelup')
+var bcrypt = require('bcryptjs')
+var levelup = require('level')
 var through = require('through')
 var bytewise = require('bytewise')
 
