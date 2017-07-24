@@ -187,7 +187,7 @@ module.exports = function(db) {
         user.modifiedTimestamp = genTimestamp()
         self.put(k(email), user, function(err) {
           done()
-          cb(err)
+          cb(err, user)
         })
       })
     })
